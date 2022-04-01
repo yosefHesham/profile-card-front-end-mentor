@@ -1,4 +1,16 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Kumbh+Sans:wght@400;700&display=swap');
 body {
   margin: 0;
-  padding 0;
+  padding: 0;
+}
+
+main {
+  background-color:  hsl(185, 75%, 39%);
+  background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
+  background-size: 80%, 80%;
+  background-position-x: -40%, 150%;
+  background-position-y: -18%, 100% ;  
+  background-repeat: no-repeat;
+  height: 100vh;
 }
