@@ -1,16 +1,102 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Kumbh+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Kumbh+Sans:wght@400;700&family=Lato:ital,wght@0,400;0,700;1,400&display=swap');:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --dark-blue: hsl(229, 23%, 23%);
+  --grey-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+}
 body {
   margin: 0;
   padding: 0;
+  font-family: "Kumbh+Sans", "Inter", sans-serif;
 }
 
 main {
-  background-color:  hsl(185, 75%, 39%);
-  background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(185, 75%, 39%);
+  background-image: url("images/bg-pattern-top.svg"),
+    url("images/bg-pattern-bottom.svg");
   background-size: 80%, 80%;
   background-position-x: -40%, 150%;
-  background-position-y: -18%, 100% ;  
+  background-position-y: -18%, 100%;
   background-repeat: no-repeat;
   height: 100vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  background-color: white;
+  width: 90%;
+  height: 60vh;
+}
+
+.person {
+  border-radius: 50%;
+  border-color: white;
+  border-style: solid;
+  border-width: 7px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 2;
+}
+.card-head {
+  width: 100%;
+  position: relative;
+}
+.pattern {
+  width: 100%;
+  height: 90%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+h1 , p{
+
+  font-family:"Kumbh+Sans" ;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 0;
+  margin-top: 15%;
+  color:var(--dark-blue)
+}
+h1 span {
+  font-weight: 400;
+  color: var(--dark-gray);
+}
+.location {
+  color: var(--dark-gray);
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+hr {
+  margin-top: 10%;
+  width: 100%;
+  color: var(--grey-blue);
+  opacity: .4;
+}
+
+.social-appearence {
+  width: 100%;
+display: flex;
+justify-content: space-evenly;
+}
+.social-appearence-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.meta-data {
+  color:var(--grey-blue);
+  font-size: 12px;
+  font-weight: 400;
 }
