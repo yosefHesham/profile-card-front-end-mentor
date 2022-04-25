@@ -7,24 +7,22 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: hsl(185, 75%, 39%);
+
   font-family: "Kumbh+Sans", "Inter", sans-serif;
 }
 
 main {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: hsl(185, 75%, 39%);
-  background-image: url("images/bg-pattern-top.svg"),
-    url("images/bg-pattern-bottom.svg");
-  background-size: 80%, 80%;
-  background-position-x: -40%, 150%;
-  background-position-y: -18%, 100%;
-  background-repeat: no-repeat;
   height: 100vh;
 }
 
 .card {
+  position: absolute;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -99,4 +97,25 @@ justify-content: space-evenly;
   color:var(--grey-blue);
   font-size: 12px;
   font-weight: 400;
+}
+
+@media only screen  and (min-width:768px) {
+  .card {
+    width: 30%;
+  }
+  hr {
+    margin-top: 5%;
+  }
+  h1 {
+    margin-top: 10%;
+  }
+  .bg-top {
+    position: relative;
+    top: -60%
+  }
+  .bg-bottom {
+    position: relative;
+    bottom: -70%;
+    right: 5%;
+  }
 }
