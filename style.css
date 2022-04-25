@@ -99,6 +99,15 @@ justify-content: space-evenly;
   font-weight: 400;
 }
 
+.bg-top {
+  position: relative;
+  top: -60%
+}
+.bg-bottom {
+  position: relative;
+  bottom: -70%;
+  right: 5%;
+}
 @media only screen  and (min-width:768px) {
   .card {
     width: 30%;
